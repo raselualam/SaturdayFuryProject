@@ -33,4 +33,41 @@ public class EbayHomePageSteps {
 		EbayHomePageActionsObj.searchItems(items);
 
 	}
+	
+	@Given("^User type Starwars in Search text box$")
+	public void user_type_Starwars_in_Search_text_box() throws Throwable {
+		EbayHomePageActionsObj.searchStarwars();
+	}
+	
+	@When("^Select Book from Category dropdown$")
+	public void select_Book_from_Category_dropdown() throws Throwable {
+		EbayHomePageActionsObj.categoryDropdown();
+	}
+	
+	@When("^Click on Search button$")
+	public void click_on_Search_button() throws Throwable {
+		EbayHomePageActionsObj.clickSearch();
+	}
+	
+
+	@Given("^User type Billie in Search text box$")
+	public void user_type_Billie_in_Search_text_box() throws Throwable {
+		EbayHomePageActionsObj.searchKeyword("Billie");
+	}
+	
+	@When("^Select Music from Category dropdown$")
+	public void select_Music_from_Category_dropdown() throws Throwable {
+		EbayHomePageActionsObj.categoryDropdown("Music");
+
+	}
+	
+	@Given("^User type Hawaii in Search text box$")
+	public void user_type_Hawaii_in_Search_text_box() throws Throwable {
+		EbayHomePageActionsObj.searchKeyword("Hawaii");
+	}
+
+	@When("^Select Travel from Category dropdown$")
+	public void select_Travel_from_Category_dropdown() throws Throwable {
+		EbayHomePageActionsObj.categoryDropdown("Travel");
+	}
 }

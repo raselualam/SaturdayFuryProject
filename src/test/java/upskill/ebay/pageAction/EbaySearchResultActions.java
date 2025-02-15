@@ -74,4 +74,16 @@ public class EbaySearchResultActions {
 			System.out.println("Brand not found");
 		}
 	}
+	
+	public void verifyStarwars(){
+		Assert.assertEquals("Starwars", EbaySearchResultLocatorsObj.txtStarwars.getText());
+	}
+	
+	public void verifyBillie(){
+		Assert.assertEquals("Billie", EbaySearchResultLocatorsObj.txtBillie.getText());
+	}
+	
+	public void verifyHawaii(){
+		Assert.assertEquals("Hawaii", EbaySearchResultLocatorsObj.txtHawaii.getText());
+	}
 }

@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import upskill.ebay.pageElements.EbayHomePageLocators;
@@ -61,5 +62,45 @@ public class EbayHomePageActions {
 		FluentWait fluentWait = new FluentWait(SetupDrivers.driver);								
 		fluentWait.withTimeout(10, TimeUnit.SECONDS);
 		fluentWait.pollingEvery(2, TimeUnit.SECONDS);
+		fluentWait.until(ExpectedConditions.elementToBeClickable(EbayHomePageLocatorsObj.btnSearch));
+	}
+	
+	public void searchStarwars(){
+		EbayHomePageLocatorsObj.txtbxSearch.sendKeys("Starwars");
+	}
+	
+	public void categoryDropdown() throws Exception{
+		Select dropDown = new Select(EbayHomePageLocatorsObj.ddCategory);
+		dropDown.selectByVisibleText("Books");
+		Thread.sleep(5000);
+		
+/*Other Options
+		dropDown.selectByVisibleText("Books");
+		Thread.sleep(5000);
+		dropDown.deselectByVisibleText("Books");
+		Thread.sleep(5000);
+		dropDown.selectByValue("625");
+		Thread.sleep(5000);
+		dropDown.deselectByValue("625");
+		Thread.sleep(5000);
+		dropDown.selectByIndex(9);
+		Thread.sleep(5000);
+		dropDown.deselectByIndex(9);
+		Thread.sleep(5000);
+	*/	
+		
+	}
+	
+	public void clickSearch(){
+		EbayHomePageLocatorsObj.btnSearch.click();
+	}
+	
+	public void searchKeyword(String Keyword){
+		EbayHomePageLocatorsObj.txtbxSearch.sendKeys(Keyword);
+	}
+	
+	public void categoryDropdown(String category){
+		Select dropDown = new Select(EbayHomePageLocatorsObj.ddCategory);
+		dropDown.selectByVisibleText(category);
 	}
 }

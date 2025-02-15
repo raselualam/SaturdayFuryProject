@@ -16,3 +16,15 @@ Description: User should able to filter items by Brand
 		|Shoes		|Nike		|
 		|Shirts		|Adidas		|
 		|Pants		|Unbranded	|
+		
+		
+	Scenario Outline: Filter items by filter 
+		Given Search for "<Items>"
+		When User select "<Size>"
+		Then Item list should have size of "<Size>"
+	
+	Examples:
+		|Items		|Size		|
+		|Shoes		|10			|
+		|Shirts		|L			|
+		|Pants		|Tall		|

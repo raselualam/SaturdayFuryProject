@@ -12,4 +12,9 @@ public class EbayHomePageLocators {
 	//Search Button
 	@FindBy(xpath="//button[@value='Search']")
 	public WebElement btnSearch;
+	
+	//Category Dropdown
+	@FindBy(xpath="//select[contains(@aria-label, 'category')]")
+	public WebElement ddCategory;
 }
+

@@ -32,4 +32,19 @@ public class EbaySearchResultSteps {
 	public void item_list_should_have_products_of(String brand) throws Throwable {
 		EbaySearchResultActionsObj.verifyBrandItems(brand);
 	}
+	
+	@Then("^Item list should have Starwars related Books$")
+	public void item_list_should_have_Starwars_related_Books() throws Throwable {
+		EbaySearchResultActionsObj.verifyStarwars();
+	}
+	
+	@Then("^Item list should have Billie related Music$")
+	public void item_list_should_have_Billie_related_Music() throws Throwable {
+		EbaySearchResultActionsObj.verifyBillie();
+	}
+	
+	@Then("^Item list should have Hawaii related Travel$")
+	public void item_list_should_have_Hawaii_related_Travel() throws Throwable {
+		EbaySearchResultActionsObj.verifyHawaii();
+	}
 }

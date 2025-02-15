@@ -29,4 +29,20 @@ public class EbaySearchResultLocators {
 	@FindBy(xpath="//input[@aria-label='Unbranded']")
 	public WebElement cbxBrandUnbranded;
 	
+	//Validate Starwars Items
+	@FindBy(xpath="//span[2][contains(text(), 'Starwars')]")
+	public WebElement txtStarwars;
+	
+	
+	//Validate Starwars Items
+	@FindBy(xpath="//span[2][contains(text(), 'Billie')]")
+	public WebElement txtBillie;
+	
+	
+	//Validate Starwars Items
+	@FindBy(xpath="//span[2][contains(text(), 'Hawaii')]")
+	public WebElement txtHawaii;
+	
 }
+
+
