@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jan 25, 2025 04:28:53 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Mar 11, 2025 11:45:46 PM</span>
 				</a>
 			</li>
 			<li>
@@ -77,7 +77,8 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -92,8 +93,11 @@
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@regression</a></li>
 					<li><a href='#'>@smoke</a></li>
+					<li><a href='#'>@us-246</a></li>
+					<li><a href='#'>@us-248</a></li>
 					<li><a href='#'>@SKYW-15</a></li>
 					<li><a href='#'>@E2E</a></li>
+					<li><a href='#'>@api</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -141,10 +145,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='71.429%'><span class='strong'>5</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='28.571%'>2</span> others
 				</div>
 			</div>
 		</div>
@@ -156,10 +160,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>11</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>11</span> others
 				</div>
 			</div>
 		</div>
@@ -171,10 +175,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75.581%'><span class='strong'>65</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>4</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='24.419%'>21</span> others
 				</div>
 			</div>
 		</div>
@@ -188,50 +192,913 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf skip' status='skip' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Ebay Search Functionality</span>
-						<span class='test-time'>Jan 25, 2025 04:28:53 PM</span>
+						<span class='test-name'>Automation Practice</span>
+						<span class='test-time'>Mar 11, 2025 11:45:46 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='2' status='pass'>
+	<span class='duration right label'>0h 0m 26s+871ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Iframe Practice</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='3' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open UpSkill Automation Practice page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='4' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Switch to Practice iFrame</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='5' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should able to write on Textbox</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf skip' status='skip' bdd='true' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>UpSkill Automation Practice</span>
+						<span class='test-time'>Mar 11, 2025 11:46:14 PM</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='2' status='skip'>
-	<span class='duration right label'>0h 0m 3s+986ms</span>
+<div class='scenario node' test-id='7' status='skip'>
+	<span class='duration right label'>0h 0m 11s+71ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Mousehover Practice</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='8' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open UpSkill Automation Practice page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='9' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Switch to Practice iFrame</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='10' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Mouse Hover to Hover Over Me</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='11' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Click on Link</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='12' status='skip'>
+	<span class='duration right label'>0h 0m 10s+13ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Dropdown Practice</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='13' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open UpSkill Automation Practice page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='14' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Switch to Practice iFrame</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='15' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Select Option from dropdown</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='16' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Verify Option selected</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='17' status='skip'>
+	<span class='duration right label'>0h 0m 16s+514ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Alert Practice</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='18' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open UpSkill Automation Practice page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='19' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Switch to Practice iFrame</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='20' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on Alert</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='21' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Click on OK</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='22' status='pass'>
+	<span class='duration right label'>0h 0m 14s+2ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Iframe Practice</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='23' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open UpSkill Automation Practice page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='24' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Switch to Practice iFrame</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='25' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should able to write on Textbox</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='26' status='skip'>
+	<span class='duration right label'>0h 0m 8s+276ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Radio Button Practice</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='27' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open UpSkill Automation Practice page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='28' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Switch to Practice iFrame</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='29' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Click on Radio 2</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='30' status='skip'>
+	<span class='duration right label'>0h 0m 8s+728ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Checkbox Practice</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='31' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open UpSkill Automation Practice page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='32' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Switch to Practice iFrame</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='33' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Click on Checkbox 2</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='34' status='skip'>
+	<span class='duration right label'>0h 0m 9s+994ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Switch Window Practice</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='35' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open UpSkill Automation Practice page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='36' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Switch to Practice iFrame</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='37' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on Open Window</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='38' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Switch to new Window</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='39' status='skip'>
+	<span class='duration right label'>0h 0m 8s+563ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Confirm Practice</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='40' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open UpSkill Automation Practice page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='41' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Switch to Practice iFrame</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='42' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Click on Confirm</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='43' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Click on OK</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='44' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Verify Great</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='45' status='skip'>
+	<span class='duration right label'>0h 0m 12s+728ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Iframe Home Practice</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='46' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open UpSkill Automation Practice page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='47' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Switch to Practice iFrame</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='48' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Switch to iFrame Home</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+		<li test-id='49' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Click on Home</span>
+				<div class='pre'>undefined</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf skip' status='skip' bdd='true' test-id='50'>
+					<div class='test-heading'>
+						<span class='test-name'>Ebay Brand Outline</span>
+						<span class='test-time'>Mar 11, 2025 11:48:03 PM</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='51' status='pass'>
+	<span class='duration right label'>0h 0m 57s+594ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Filter items by Brand</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='52' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@smoke</span>
+				<span class='category label white-text'>@regression</span>
+				<span class='category label white-text'>@us-246</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Filter items by Brand</span>
+			
+				<ul class='steps'>
+					<li test-id='53' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given Open Ebay Homepage</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='54' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given Search for "Shoes"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='55' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When Filter by "Nike"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='56' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Item list should have products of "Nike"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='57' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@smoke</span>
+				<span class='category label white-text'>@regression</span>
+				<span class='category label white-text'>@us-246</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Filter items by Brand</span>
+			
+				<ul class='steps'>
+					<li test-id='58' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given Open Ebay Homepage</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='59' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given Search for "Shirts"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='60' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When Filter by "Adidas"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='61' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Item list should have products of "Adidas"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='62' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@smoke</span>
+				<span class='category label white-text'>@regression</span>
+				<span class='category label white-text'>@us-246</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Filter items by Brand</span>
+			
+				<ul class='steps'>
+					<li test-id='63' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given Open Ebay Homepage</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='64' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given Search for "Pants"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='65' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When Filter by "Unbranded"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='66' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Item list should have products of "Unbranded"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='67' status='skip'>
+	<span class='duration right label'>0h 0m 39s+842ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Filter items by filter</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='68' class='node scenario skip' status='skip'>
+			<div class='category-list'>
+				<span class='category label white-text'>@smoke</span>
+				<span class='category label white-text'>@regression</span>
+				<span class='category label white-text'>@us-246</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Filter items by filter</span>
+			
+				<ul class='steps'>
+					<li test-id='69' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given Open Ebay Homepage</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='70' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given Search for "Shoes"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='71' class='node when skip' status='skip'><b>When</b>
+						<span class="bdd-step-name">When User select "10"</span>
+							<div class='pre'>undefined</div>
+					</li>
+					<li test-id='72' class='node then skip' status='skip'><b>Then</b>
+						<span class="bdd-step-name">Then Item list should have size of "10"</span>
+							<div class='pre'>undefined</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='73' class='node scenario skip' status='skip'>
+			<div class='category-list'>
+				<span class='category label white-text'>@smoke</span>
+				<span class='category label white-text'>@regression</span>
+				<span class='category label white-text'>@us-246</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Filter items by filter</span>
+			
+				<ul class='steps'>
+					<li test-id='74' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given Open Ebay Homepage</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='75' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given Search for "Shirts"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='76' class='node when skip' status='skip'><b>When</b>
+						<span class="bdd-step-name">When User select "L"</span>
+							<div class='pre'>undefined</div>
+					</li>
+					<li test-id='77' class='node then skip' status='skip'><b>Then</b>
+						<span class="bdd-step-name">Then Item list should have size of "L"</span>
+							<div class='pre'>undefined</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='78' class='node scenario skip' status='skip'>
+			<div class='category-list'>
+				<span class='category label white-text'>@smoke</span>
+				<span class='category label white-text'>@regression</span>
+				<span class='category label white-text'>@us-246</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Filter items by filter</span>
+			
+				<ul class='steps'>
+					<li test-id='79' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given Open Ebay Homepage</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='80' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given Search for "Pants"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='81' class='node when skip' status='skip'><b>When</b>
+						<span class="bdd-step-name">When User select "Tall"</span>
+							<div class='pre'>undefined</div>
+					</li>
+					<li test-id='82' class='node then skip' status='skip'><b>Then</b>
+						<span class="bdd-step-name">Then Item list should have size of "Tall"</span>
+							<div class='pre'>undefined</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='83'>
+					<div class='test-heading'>
+						<span class='test-name'>Ebay Category Dropdown</span>
+						<span class='test-time'>Mar 11, 2025 11:49:42 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='84' status='pass'>
+	<span class='duration right label'>0h 0m 16s+628ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Ebay Search Category Dropdown</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='85' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Ebay Homepage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='86' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User type Starwars in Search text box</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='87' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Select Book from Category dropdown</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='88' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Click on Search button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='89' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Item list should have Starwars related Books</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='90' status='pass'>
+	<span class='duration right label'>0h 0m 8s+425ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Ebay Category Dropdown using Index</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='91' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Ebay Homepage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='92' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User type Billie in Search text box</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='93' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Select Music from Category dropdown</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='94' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Click on Search button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='95' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Item list should have Billie related Music</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='96' status='pass'>
+	<span class='duration right label'>0h 0m 8s+917ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Ebay Category Dropdown using value</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='97' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Ebay Homepage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='98' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User type Hawaii in Search text box</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='99' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Select Travel from Category dropdown</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='100' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Click on Search button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='101' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Item list should have Hawaii related Travel</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='102'>
+					<div class='test-heading'>
+						<span class='test-name'>Ebay Search Functionality</span>
+						<span class='test-time'>Mar 11, 2025 11:50:19 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='103' status='pass'>
+	<span class='duration right label'>0h 0m 37s+66ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Search for Shoes</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node given skip' status='skip'>
+		<li test-id='104' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
 			<span class="bdd-step-name">Given Open Ebay Homepage</span>
-				<div class='pre'>undefined</div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='4' class='node given skip' status='skip'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given Open Ebay Homepage</span>
-				<div class='pre'>undefined</div>
-			
-		</li>
-		<li test-id='5' class='node when skip' status='skip'>
+		<li test-id='105' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When Search for shoes</span>
-				<div class='pre'>undefined</div>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='6' class='node then skip' status='skip'>
+		<li test-id='106' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then Item list should have only shoes related products</span>
-				<div class='pre'>undefined</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='107'>
+					<div class='test-heading'>
+						<span class='test-name'>Ebay Summary Mousehover</span>
+						<span class='test-time'>Mar 11, 2025 11:50:57 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='108' status='pass'>
+	<span class='duration right label'>0h 0m 16s+842ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Ebay Summary Mousehover</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='109' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Ebay Homepage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='110' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Mouse Hover to MyEbay Summary</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='111' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Click on Summary</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='112'>
+					<div class='test-heading'>
+						<span class='test-name'>Petstore API Testing</span>
+						<span class='test-time'>Mar 11, 2025 11:51:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='113' status='pass'>
+	<span class='duration right label'>0h 0m 10s+478ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Pet CRUD API</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='114' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Create pet</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='115' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Update pet</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='116' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Get pet</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='117' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Delete pet</span>
+				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
@@ -292,14 +1159,15 @@
 					<div class='category-heading'>
 						<span class='category-name'>@regression</span>
 						<span class='category-status right'>
-							<span class='label others'>1</span>
+							<span class='label pass'>8</span>
+							<span class='label others'>5</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 8</span>
 							
-							
-							<span class='label yellow darken-2 white-text'>Others: 1</span>
+							<span class='label yellow darken-2 white-text'>Others: 5</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -313,9 +1181,69 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 25, 2025 04:28:53 PM</td>
-										<td class='linked' test-id='1'>Ebay Search Functionality</td>
+										<td>Mar 11, 2025 11:45:46 PM</td>
+										<td class='linked' test-id='1'>Automation Practice</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:46:14 PM</td>
+										<td class='linked' test-id='6'>UpSkill Automation Practice</td>
 										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:48:03 PM</td>
+										<td class='linked' test-id='50'>Ebay Brand Outline</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:48:03 PM</td>
+										<td class='linked' test-id='52'>Ebay Brand Outline.Filter items by Brand.Filter items by Brand</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:48:25 PM</td>
+										<td class='linked' test-id='57'>Ebay Brand Outline.Filter items by Brand.Filter items by Brand</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:48:43 PM</td>
+										<td class='linked' test-id='62'>Ebay Brand Outline.Filter items by Brand.Filter items by Brand</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:49:01 PM</td>
+										<td class='linked' test-id='68'>Ebay Brand Outline.Filter items by filter.Filter items by filter</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:49:14 PM</td>
+										<td class='linked' test-id='73'>Ebay Brand Outline.Filter items by filter.Filter items by filter</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:49:28 PM</td>
+										<td class='linked' test-id='78'>Ebay Brand Outline.Filter items by filter.Filter items by filter</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:49:42 PM</td>
+										<td class='linked' test-id='83'>Ebay Category Dropdown</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:50:19 PM</td>
+										<td class='linked' test-id='102'>Ebay Search Functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:50:57 PM</td>
+										<td class='linked' test-id='107'>Ebay Summary Mousehover</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:51:15 PM</td>
+										<td class='linked' test-id='112'>Petstore API Testing</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -326,14 +1254,15 @@
 					<div class='category-heading'>
 						<span class='category-name'>@smoke</span>
 						<span class='category-status right'>
-							<span class='label others'>1</span>
+							<span class='label pass'>5</span>
+							<span class='label others'>4</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 5</span>
 							
-							
-							<span class='label yellow darken-2 white-text'>Others: 1</span>
+							<span class='label yellow darken-2 white-text'>Others: 4</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -347,9 +1276,148 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 25, 2025 04:28:53 PM</td>
-										<td class='linked' test-id='1'>Ebay Search Functionality</td>
+										<td>Mar 11, 2025 11:48:03 PM</td>
+										<td class='linked' test-id='50'>Ebay Brand Outline</td>
 										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:48:03 PM</td>
+										<td class='linked' test-id='52'>Ebay Brand Outline.Filter items by Brand.Filter items by Brand</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:48:25 PM</td>
+										<td class='linked' test-id='57'>Ebay Brand Outline.Filter items by Brand.Filter items by Brand</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:48:43 PM</td>
+										<td class='linked' test-id='62'>Ebay Brand Outline.Filter items by Brand.Filter items by Brand</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:49:01 PM</td>
+										<td class='linked' test-id='68'>Ebay Brand Outline.Filter items by filter.Filter items by filter</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:49:14 PM</td>
+										<td class='linked' test-id='73'>Ebay Brand Outline.Filter items by filter.Filter items by filter</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:49:28 PM</td>
+										<td class='linked' test-id='78'>Ebay Brand Outline.Filter items by filter.Filter items by filter</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:49:42 PM</td>
+										<td class='linked' test-id='83'>Ebay Category Dropdown</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:50:19 PM</td>
+										<td class='linked' test-id='102'>Ebay Search Functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@us-246</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+							<span class='label others'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							
+							<span class='label yellow darken-2 white-text'>Others: 4</span>
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 11, 2025 11:48:03 PM</td>
+										<td class='linked' test-id='50'>Ebay Brand Outline</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:48:03 PM</td>
+										<td class='linked' test-id='52'>Ebay Brand Outline.Filter items by Brand.Filter items by Brand</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:48:25 PM</td>
+										<td class='linked' test-id='57'>Ebay Brand Outline.Filter items by Brand.Filter items by Brand</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:48:43 PM</td>
+										<td class='linked' test-id='62'>Ebay Brand Outline.Filter items by Brand.Filter items by Brand</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:49:01 PM</td>
+										<td class='linked' test-id='68'>Ebay Brand Outline.Filter items by filter.Filter items by filter</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:49:14 PM</td>
+										<td class='linked' test-id='73'>Ebay Brand Outline.Filter items by filter.Filter items by filter</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+									<tr>
+										<td>Mar 11, 2025 11:49:28 PM</td>
+										<td class='linked' test-id='78'>Ebay Brand Outline.Filter items by filter.Filter items by filter</td>
+										<td><span class='test-status skip'>skip</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@us-248</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 11, 2025 11:49:42 PM</td>
+										<td class='linked' test-id='83'>Ebay Category Dropdown</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -360,14 +1428,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>@SKYW-15</span>
 						<span class='category-status right'>
-							<span class='label others'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
-							<span class='label yellow darken-2 white-text'>Others: 1</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -381,9 +1449,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 25, 2025 04:28:53 PM</td>
-										<td class='linked' test-id='1'>Ebay Search Functionality</td>
-										<td><span class='test-status skip'>skip</span></td>
+										<td>Mar 11, 2025 11:50:19 PM</td>
+										<td class='linked' test-id='102'>Ebay Search Functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -394,14 +1462,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>@E2E</span>
 						<span class='category-status right'>
-							<span class='label others'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
-							<span class='label yellow darken-2 white-text'>Others: 1</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -415,9 +1483,43 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 25, 2025 04:28:53 PM</td>
-										<td class='linked' test-id='1'>Ebay Search Functionality</td>
-										<td><span class='test-status skip'>skip</span></td>
+										<td>Mar 11, 2025 11:50:19 PM</td>
+										<td class='linked' test-id='102'>Ebay Search Functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@api</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 11, 2025 11:51:15 PM</td>
+										<td class='linked' test-id='112'>Petstore API Testing</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -445,37 +1547,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>22</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>86</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 25, 2025 04:28:53 PM</div>
+					<div class='panel-lead'>Mar 11, 2025 11:45:46 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 25, 2025 04:28:57 PM</div>
+			 		<div class='panel-lead'>Mar 11, 2025 11:51:27 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 4s+842ms</div>
+					<div class='panel-lead'>0h 5m 40s+527ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -492,38 +1594,65 @@
 						</tr>
 						<tr>
 							<td>@regression</td>
+							<td>8</td>
 							<td>0</td>
-							<td>0</td>
-							<td>1</td>
+							<td>5</td>
 							<td>
-									0%
+									61.538%
 							</td>
 						</tr>
 						<tr>
 							<td>@smoke</td>
+							<td>5</td>
 							<td>0</td>
-							<td>0</td>
-							<td>1</td>
+							<td>4</td>
 							<td>
-									0%
+									55.556%
+							</td>
+						</tr>
+						<tr>
+							<td>@us-246</td>
+							<td>3</td>
+							<td>0</td>
+							<td>4</td>
+							<td>
+									42.857%
+							</td>
+						</tr>
+						<tr>
+							<td>@us-248</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>@SKYW-15</td>
-							<td>0</td>
-							<td>0</td>
 							<td>1</td>
+							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>@E2E</td>
-							<td>0</td>
-							<td>0</td>
 							<td>1</td>
+							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@api</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
 							</td>
 						</tr>
 					</table>
@@ -539,31 +1668,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
+				passParent: 5,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 1,
-				exceptionsParent: 1,
+				skipParent: 2,
+				exceptionsParent: 2,
 				
-				passChild: 0,
+				passChild: 11,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 1,
+				skipChild: 11,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 11,
 				
-				passGrandChild: 0,
+				passGrandChild: 65,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 4,
+				skipGrandChild: 21,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 4,
+				exceptionsGrandChild: 21,
 			};
 		</script>
 		

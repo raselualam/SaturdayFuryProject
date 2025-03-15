@@ -1,20 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression" duration-ms="5332" started-at="2025-01-25T21:28:52Z" finished-at="2025-01-25T21:28:58Z">
+  <suite name="Regression" duration-ms="341186" started-at="2025-03-12T03:45:46Z" finished-at="2025-03-12T03:51:27Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:upskill.runners.RunnerClass@70be0a2b]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:upskill.runners.RunnerClass@f8c1ddd]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Ebay" duration-ms="5332" started-at="2025-01-25T21:28:52Z" finished-at="2025-01-25T21:28:58Z">
+    <test name="Ebay" duration-ms="341186" started-at="2025-03-12T03:45:46Z" finished-at="2025-03-12T03:51:27Z">
       <class name="upskill.runners.RunnerClass">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:upskill.runners.RunnerClass@70be0a2b]" name="setUpClass" is-config="true" duration-ms="151" started-at="2025-01-25T16:28:52Z" finished-at="2025-01-25T16:28:52Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:upskill.runners.RunnerClass@f8c1ddd]" name="setUpClass" is-config="true" duration-ms="159" started-at="2025-03-11T23:45:46Z" finished-at="2025-03-11T23:45:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:upskill.runners.RunnerClass@70be0a2b]" name="feature" duration-ms="4890" started-at="2025-01-25T16:28:53Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2025-01-25T16:28:57Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:upskill.runners.RunnerClass@f8c1ddd]" name="feature" duration-ms="27960" started-at="2025-03-11T23:45:46Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2025-03-11T23:46:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automation Practice]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:upskill.runners.RunnerClass@f8c1ddd]" name="feature" duration-ms="108575" started-at="2025-03-11T23:46:14Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2025-03-11T23:48:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UpSkill Automation Practice]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:upskill.runners.RunnerClass@f8c1ddd]" name="feature" duration-ms="99235" started-at="2025-03-11T23:48:03Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2025-03-11T23:49:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ebay Brand Outline]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:upskill.runners.RunnerClass@f8c1ddd]" name="feature" duration-ms="36999" started-at="2025-03-11T23:49:42Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2025-03-11T23:50:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ebay Category Dropdown]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:upskill.runners.RunnerClass@f8c1ddd]" name="feature" duration-ms="38394" started-at="2025-03-11T23:50:19Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2025-03-11T23:50:57Z">
           <params>
             <param index="0">
               <value>
@@ -25,11 +69,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="writeExtentReport()[pri:0, instance:upskill.runners.RunnerClass@70be0a2b]" name="writeExtentReport" is-config="true" duration-ms="8" started-at="2025-01-25T16:28:57Z" finished-at="2025-01-25T16:28:57Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:upskill.runners.RunnerClass@f8c1ddd]" name="feature" duration-ms="17871" started-at="2025-03-11T23:50:57Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2025-03-11T23:51:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ebay Summary Mousehover]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:upskill.runners.RunnerClass@f8c1ddd]" name="feature" duration-ms="11535" started-at="2025-03-11T23:51:15Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2025-03-11T23:51:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Petstore API Testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="writeExtentReport()[pri:0, instance:upskill.runners.RunnerClass@f8c1ddd]" name="writeExtentReport" is-config="true" duration-ms="23" started-at="2025-03-11T23:51:27Z" finished-at="2025-03-11T23:51:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeExtentReport -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:upskill.runners.RunnerClass@70be0a2b]" name="tearDownClass" is-config="true" duration-ms="222" started-at="2025-01-25T16:28:57Z" finished-at="2025-01-25T16:28:58Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:upskill.runners.RunnerClass@f8c1ddd]" name="tearDownClass" is-config="true" duration-ms="365" started-at="2025-03-11T23:51:27Z" finished-at="2025-03-11T23:51:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

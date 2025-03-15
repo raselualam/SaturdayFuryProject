@@ -16,5 +16,13 @@ public class EbayHomePageLocators {
 	//Category Dropdown
 	@FindBy(xpath="//select[contains(@aria-label, 'category')]")
 	public WebElement ddCategory;
+	
+	//My Ebay Link
+	@FindBy(xpath="//span[contains(text(),'My eBay')]")
+	public WebElement linkMyEbay;
+	
+	//Summary
+	@FindBy(xpath="//a[contains(text(),'Summary')]")
+	public WebElement linkSummary;
 }
 

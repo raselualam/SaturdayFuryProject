@@ -1,0 +1,18 @@
+{
+  "id": 8,
+  "category": {
+    "id": 8,
+    "name": "cat"
+  },
+  "name": "mimic",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}
